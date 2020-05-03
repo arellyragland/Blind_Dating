@@ -44,12 +44,16 @@
         <dt>
             @Html.DisplayNameFor(model => model.UserAccountId)
         </dt>
+
         <dd>
             @Html.DisplayFor(model => model.UserAccountId)
+        </dd>
+        <dd>
+            <img src="\userPhotos\@Html.DisplayFor(model => model.PhotoPath)" width="200" height="200" />
         </dd>
     </dl>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Browse"> Browsing Profiles</a>
 </div>
